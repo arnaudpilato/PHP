@@ -2,7 +2,7 @@
 
 function code($message){
     $keyNumber = strlen($message) / 2;
-    $newString = mb_substr($message, 5, $keyNumber);
+    $newString = substr($message, 5, $keyNumber);
     $space = str_replace('@#?', ' ', $newString);
     $reverse = strrev($space);
 
